@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="9"
+    android:paddingHorizontal="@dimen/layoutPaddingH"
+    android:paddingVertical="@dimen/layoutPaddingV"
+    android:background="@drawable/back2"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/layoutMarginBottom"
+        android:layout_marginTop="@dimen/layoutMarginTop">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivLen"
+                style="@style/AppTheme.ImageView"
+                android:layout_width="@dimen/ivWidth"
+                android:layout_height="@dimen/ivHeight"
+                android:src="@drawable/ruler" />
+
+            <TextView
+                android:id="@+id/tvLen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lenText"
+                style="@style/captionStyle"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivTemp"
+                style="@style/AppTheme.ImageView"
+                android:layout_width="@dimen/ivWidth"
+                android:layout_height="@dimen/ivHeight"
+                android:src="@drawable/thermometer"/>
+
+            <TextView
+                android:id="@+id/tvTemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/captionStyle"
+                android:text="@string/tempText" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/layoutMarginBottom"
+        android:layout_marginTop="@dimen/layoutMarginTop"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivWeight"
+                style="@style/AppTheme.ImageView"
+                android:layout_width="@dimen/ivWidth"
+                android:layout_height="@dimen/ivHeight"
+                android:src="@drawable/balance"/>
+
+            <TextView
+                android:id="@+id/tvWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/weightText"
+                style="@style/captionStyle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivVol"
+                style="@style/AppTheme.ImageView"
+                android:layout_width="@dimen/ivWidth"
+                android:layout_height="@dimen/ivHeight"
+                android:src="@drawable/volume"
+                />
+
+            <TextView
+                android:id="@+id/tvVol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/captionStyle"
+                android:text="@string/volText" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

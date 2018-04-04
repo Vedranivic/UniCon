@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UniCon</string>
+    <string name="lenText">Length</string>
+    <string name="tempText">Temperature</string>
+    <string name="weightText">Weight</string>
+    <string name="volText">Volume</string>
+</resources>
