@@ -16,6 +16,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".LengthActivity"
+            android:theme="@style/AppThemeConversion" />
+        <activity
+            android:name=".TemperatureActivity"
+            android:theme="@style/AppThemeConversion" />
+        <activity
+            android:name=".WeightActivity"
+            android:theme="@style/AppThemeConversion" />
+        <activity
+            android:name=".VolumeActivity"
+            android:theme="@style/AppThemeConversion" />
+        <activity
+            android:name=".ResultActivity"
+            android:theme="@style/AppThemeConversion" />
     </application>
 
 </manifest>

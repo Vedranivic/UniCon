@@ -9,4 +9,7 @@
     <dimen name="layoutMarginTop">10dp</dimen>
     <dimen name="CaptionTextSize">30sp</dimen>
     <dimen name="iconPadding">20dp</dimen>
+    <dimen name="TitleTextSize">50sp</dimen>
+    <dimen name="SubTitleTextSize">30sp</dimen>
+    <dimen name="TitlePadding">8dp</dimen>
 </resources>

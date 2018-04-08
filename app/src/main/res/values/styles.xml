@@ -7,6 +7,11 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="AppThemeConversion" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
 
     <style name="ivStyle">
         <item name="android:padding">10dp</item>
@@ -20,9 +25,42 @@
         <item name="android:gravity">center</item>
     </style>
 
+    <style name="titleStyle">
+        <item name = "android:textStyle">bold</item>
+        <item name = "android:textSize">@dimen/TitleTextSize</item>
+        <item name="android:paddingStart">@dimen/TitlePadding</item>
+        <item name="android:paddingEnd">@dimen/TitlePadding</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="subTitleStyle">
+        <item name = "android:textSize">@dimen/SubTitleTextSize</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/ivMargin</item>
+    </style>
+    <style name="OutputStyle">
+        <item name = "android:textSize">@dimen/SubTitleTextSize</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/ivMargin</item>
+        <item name="android:background">@drawable/border</item>
+        <item name="android:padding">@dimen/TitlePadding</item>
+        <item name="android:layout_marginTop">@dimen/ivMargin</item>
+    </style>
+    <style name="evInputStyle">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textColorHint">#82ffffff</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:hint">@string/HintText</item>
+    </style>
+
     <style name="AppTheme.ImageView" parent="Widget.AppCompat.Button.Colored">
         <item name="android:padding">@dimen/iconPadding</item>
         <item name="android:backgroundTint">@color/colorPrimaryDark</item>
         <item name="android:layout_marginBottom">@dimen/ivMargin</item>
+    </style>
+    <style name="AppTheme.SpinnerWhiteText"  parent="Base.Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:textColor">#ffffff</item>
     </style>
 </resources>

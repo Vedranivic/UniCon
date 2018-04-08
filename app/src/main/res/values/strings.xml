@@ -1,7 +1,33 @@
 <resources>
     <string name="app_name">UniCon</string>
-    <string name="lenText">Length</string>
-    <string name="tempText">Temperature</string>
-    <string name="weightText">Weight</string>
-    <string name="volText">Volume</string>
+    <string name="lenText">&#160;Length&#160;</string>
+    <string name="tempText">&#160;Temperature&#160;</string>
+    <string name="weightText">&#160;Weight&#160;</string>
+    <string name="volText">&#160;Volume&#160;</string>
+    <string name="ConvText">CONVERSION</string>
+    <string name="HintText">Enter a value&#8230;</string>
+    <string name="resTitle">&#160;Result&#160;</string>
+    <string-array name="LengthUnits">
+        <item>metres (m)</item>
+        <item>inches (in)</item>
+        <item>kilometres (km)</item>
+        <item>centimetres (cm)</item>
+        <item>feet (ft)</item>
+    </string-array>
+    <string-array name="TemperatureUnits">
+        <item>Celsius (°C)</item>
+        <item>Fahrenheit (°F)</item>
+        <item>Kelvin (K)</item>
+    </string-array>
+    <string-array name="WeightUnits">
+        <item>kilograms (kg)</item>
+        <item>grams (g)</item>
+        <item>pounds (lb)</item>
+        <item>ounces (oz)</item>
+    </string-array>
+    <string-array name="VolumeUnits">
+        <item>liters (L)</item>
+        <item>mililiters (mL)</item>
+        <item>gallons (gal)</item>
+    </string-array>
 </resources>

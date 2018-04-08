@@ -3,6 +3,6 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="distanceBackColor">#028900</color>
-    <color name="temperatureBackColor">#ff5000</color>
+    <color name="popUpBackColor">#c3303f9f</color>
+
 </resources>
