@@ -18,6 +18,7 @@ import butterknife.OnClick;
 
 public class TemperatureActivity extends AppCompatActivity {
 
+    //sve analogno LengthActivityju osim funkcije konverzije
     @BindView(R.id.tvTitle) TextView tvTitle;
     @BindView(R.id.tvSubTitle) TextView tvSubTitle;
     @BindView(R.id.fabConvert) FloatingActionButton fabConvert;
@@ -50,6 +51,11 @@ public class TemperatureActivity extends AppCompatActivity {
         else Toast.makeText(getApplicationContext(),"Please enter a value!", Toast.LENGTH_LONG).show();
     }
 
+    /* funkcija konverzije je malo drugačija - ponajprije se ulazna jedinica pretvara u stupnjeve
+       Celzijuse te zatim u traženu jedinicu. Navedeno se postiže određivanjem ofseta izmedju
+       jedinica te koeficijenta (faktora) multiplikacije na temelju odabranih jedinica i nizova
+       ofseta, faktora i stringova jedinica koji su uskladjeni
+     */
     private String convertLen(){
         Double valueIn = Double.parseDouble(evInput.getText().toString());
         Double valueOut,valueCelsius;

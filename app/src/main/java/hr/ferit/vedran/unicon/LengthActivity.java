@@ -32,25 +32,36 @@ public class LengthActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
 
+        //mijenjanje fonta za textviewe
         tvTitle.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/Kaleidos.ttf"));
         tvSubTitle.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/Novecento.otf"));
+        //postavljanje defaultnog izlaznog unita spinnera na drugi odabir
         spOutput.setSelection(1);
 
     }
 
+    //klik na FAButton - ubacuju se podaci kao extras i pokreće result activity
     @OnClick (R.id.fabConvert)
     public void showResult(){
+        //provjera postoji li unos vrijednosti
         if (!evInput.getText().toString().equals("")){
             Intent result = new Intent(this, ResultActivity.class);
             result.putExtra("Input",evInput.getText().toString());
             result.putExtra("UnitIn",spInput.getSelectedItem().toString());
+            //poziva se funkcija koja obavalja racunanje i konverziju
             result.putExtra("Output",convertLen());
             result.putExtra("UnitOut",spOutput.getSelectedItem().toString());
             startActivity(result);
         }
+        //ispis poruke o potrebnom unosu
         else Toast.makeText(getApplicationContext(),"Please enter a value!", Toast.LENGTH_LONG).show();
     }
 
+    //funkcija konverzije (duljine)
+    /*na osnovu ulazne odabrane jedinice (s prvog spinnera) i izlazne odabrane jedinice (s drugog)
+      odredjuju se njihovi vrijednosni faktori iz poredanog niza faktora koji je u skladu s nizom
+      stringova jedinica. Na osnovu dobivenih faktora i ulazne vrijednosti računa se izlazna
+      vrijednost */
     private String convertLen(){
         Double valueIn = Double.parseDouble(evInput.getText().toString());
         Double valueOut;

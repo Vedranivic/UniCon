@@ -40,12 +40,14 @@ public class MainActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
 
+        //postavljanje fonta za tektove
         tvLen.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/Kaleidos.ttf"));
         tvTemp.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/Kaleidos.ttf"));
         tvWeight.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/Kaleidos.ttf"));
         tvVol.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/Kaleidos.ttf"));
     }
 
+    //otvaranje odgovarajućeg aktivitija ovisno o kojem se odabiru radi
     @OnClick({R.id.ivLen, R.id.ivTemp, R.id.ivWeight, R.id.ivVol})
     public void goToConversion(ImageView iv) {
         Intent conversion = new Intent();

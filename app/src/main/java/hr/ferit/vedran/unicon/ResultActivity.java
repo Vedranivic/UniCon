@@ -22,10 +22,13 @@ public class ResultActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
 
+        //postavljanje fonta tekstovima
         tvTitle.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/Kaleidos.ttf"));
         tvInput.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/Novecento.otf"));
         tvOutput.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/Novecento.otf"));
+        //postavljanje sadržaja ulaznih vrijednosti
         setInput();
+        //postavljanje sadržaja izlaznih vrijednosti
         setOutput();
     }
     protected void setInput(){

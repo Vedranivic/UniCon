@@ -18,6 +18,7 @@ import butterknife.OnClick;
 
 public class WeightActivity extends AppCompatActivity {
 
+    //sve analogno LengthActivityju
     @BindView(R.id.tvTitle) TextView tvTitle;
     @BindView(R.id.tvSubTitle) TextView tvSubTitle;
     @BindView(R.id.fabConvert) FloatingActionButton fabConvert;
