@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Locale;
 
@@ -38,12 +39,15 @@ public class VolumeActivity extends AppCompatActivity {
 
     @OnClick(R.id.fabConvert)
     public void showResult(){
-        Intent result = new Intent(this, ResultActivity.class);
-        result.putExtra("Input",evInput.getText().toString());
-        result.putExtra("UnitIn",spInput.getSelectedItem().toString());
-        result.putExtra("Output",convertLen());
-        result.putExtra("UnitOut",spOutput.getSelectedItem().toString());
-        startActivity(result);
+        if (!evInput.getText().toString().equals("")){
+            Intent result = new Intent(this, ResultActivity.class);
+            result.putExtra("Input",evInput.getText().toString());
+            result.putExtra("UnitIn",spInput.getSelectedItem().toString());
+            result.putExtra("Output",convertLen());
+            result.putExtra("UnitOut",spOutput.getSelectedItem().toString());
+            startActivity(result);
+        }
+        else Toast.makeText(getApplicationContext(),"Please enter a value!", Toast.LENGTH_LONG).show();
     }
 
     private String convertLen(){
