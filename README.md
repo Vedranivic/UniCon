@@ -5,7 +5,7 @@ The application represents a simple universal converter i.e. a tool foor calcula
 
 ### The assignment and problems encountered
 
-The assignment was to create a universal measurement units converter with minimum four types of conversions, using intents and multiple activities. The app needs to have a **main starting activity** for user to choose the conversion type, the **conversion activity** for each type of conversion with value entry and unit selection enabled and an **activity for displaying result** of conversion. The building of this faces challenges such as working with intents and passing data between activities, layout designing, conversion implementation, working with spinners etc.
+The assignment was to create a universal measurement units converter with minimum four types of conversions, using intents and multiple activities. The app needs to have a **main starting activity** for user to choose the conversion type, the **conversion activity** for each type of conversion with value entry and unit selection enabled and an **activity for displaying result** of conversion. The building of this application faces challenges such as working with intents and passing data between activities, layout designing, conversion implementation, working with spinners etc.
 
 ### Utilised snippets/solutions/libraries/SO answers
 
