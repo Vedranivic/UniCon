@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="ivMargin">10dp</dimen>
-    <dimen name="layoutPaddingH">40dp</dimen>
-    <dimen name="layoutPaddingV">40dp</dimen>
+    <dimen name="layoutPadding">40dp</dimen>
     <dimen name="ivHeight">120dp</dimen>
     <dimen name="ivWidth">120dp</dimen>
     <dimen name="layoutMarginBottom">10dp</dimen>

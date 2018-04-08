@@ -4,8 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="9"
-    android:paddingHorizontal="@dimen/layoutPaddingH"
-    android:paddingVertical="@dimen/layoutPaddingV"
+    android:padding="@dimen/layoutPadding"
     android:background="@drawable/back2"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
