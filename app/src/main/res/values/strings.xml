@@ -28,6 +28,7 @@
     <string-array name="VolumeUnits">
         <item>liters (L)</item>
         <item>mililiters (mL)</item>
-        <item>gallons (gal)</item>
+        <item>deciliters (dL)</item>
+        <item>gallons UK (gal)</item>
     </string-array>
 </resources>

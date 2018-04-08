@@ -19,6 +19,7 @@
         style="@style/subTitleStyle" />
 
     <Spinner
+        android:id="@+id/spInput"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.SpinnerWhiteText"
@@ -27,6 +28,7 @@
         android:layout_margin="10dp">
     </Spinner>
     <EditText
+        android:id="@+id/evInput"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:textColorHint="#82ffffff"
@@ -34,6 +36,7 @@
         android:inputType="numberSigned"
         android:hint="@string/HintText"/>
     <Spinner
+        android:id="@+id/spOutput"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.SpinnerWhiteText"
@@ -42,6 +45,7 @@
         android:layout_margin="10dp">
     </Spinner>
     <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabConvert"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:src="@drawable/ic_compare_arrows_black_24dp"

@@ -33,6 +33,7 @@ public class LengthActivity extends AppCompatActivity {
 
         tvTitle.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/Kaleidos.ttf"));
         tvSubTitle.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/Novecento.otf"));
+        spOutput.setSelection(1);
 
     }
 
